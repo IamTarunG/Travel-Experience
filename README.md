@@ -1,6 +1,6 @@
-# CRUD with Redux
+# Travel Experience with Redux
 
-### CRUD app using MERN stack
+### Travel Experience app using MERN stack
 
 ## To run the code in your local machine
 

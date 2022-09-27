@@ -1,5 +1,4 @@
-import React from "react";
-import moment from "moment";
+
 import { useDispatch } from "react-redux";
 import { deletePosts } from "../../../store/actions/posts";
 export default function Post(props) {
@@ -16,7 +15,6 @@ export default function Post(props) {
         return (
           <div className="rounded overflow-hidden shadow-lg" key={ele._id}>
             <img className="w-full" src={ele.image} alt="Mountain" />
-            <small className="mx-4">{moment(ele.createdAt).fromNow()}</small>
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{ele.title}</div>
               <p className="text-gray-700 text-base">{ele.message}</p>

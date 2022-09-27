@@ -7,10 +7,11 @@ const app = express();
 const dotenv = require("dotenv");
 dotenv.config();
 connectToDB();
+const port = process.env.PORT | 5000
 app.use(cors());
 app.use(express.urlencoded({ extended: false, limit: "30mb" }));
 app.use(express.json({ limit: "30mb" }));
 app.use("/posts", postRouter);
-app.listen(5000, () => {
-  console.log("Server Running at port 5000");
+app.listen(port, () => {
+  console.log("Server Running at port " + port);
 });
